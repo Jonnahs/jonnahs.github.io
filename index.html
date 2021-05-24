@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+
+    <title>WhatsApp Anônimo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-12">
+            <a class="btn btn-outline-dark" href='https://github.com/Jonnahs' style="color: white;"><i class="bi-github" role="img" aria-label="GitHub" style="font-size: 2rem;"></i> https://github.com/Jonnahs</a>
+        </div>
+        <div class="col-12">
+            <a class="btn btn-outline-dark" href='https://www.linkedin.com/in/jonas-alves-697098179/' style="color: white;"><i class="bi bi-linkedin" role="img" aria-label="LinKedin" style="font-size: 2rem;"></i> linkedin - jonas-alves</a>
+        </div>
+        <div class="row headerAjuste">
+            <img class="displayWhats" src="img/whatsLogo.png">
+            <img class="displayAnonimo" src="img/anonimo.jpeg">
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col-11 col-sm-8 col-md-6 col-lg-4" style="margin-left: auto; margin-right: auto;">
+                <h5 style="color: #627077; text-align: left;">Digite o número de WhatsApp:</h5>
+                <div class="input-group">
+
+                    <input class="form-control" style="text-align: center" type="text" id="phone" name="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" onkeyup=" entrandoComDados(this.value); " />
+                </div>
+                <br>
+            </div>
+            <p class="wrapper"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/mask.js"></script>
+</body>
+
+</html>
